@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Pomodoro</title>
+    <link rel="stylesheet" href="css/normalize.css">
+    <link rel="stylesheet" href="css/styles.css">
+</head>
+<body>
+
+<div class="flexcontainer">
+    <form action="" class="pomodoro">
+        <div id="pomodoroTime" class="pomodoroTime">25:00</div>
+
+        <div class="buttons">
+            <button class="btn btn-primary" id="pStart">Start</button>
+            <button class="btn btn-secondary" id="pPause">Pause</button>
+            <button class="btn btn-secondary" id="pStop">Stop</button>
+        </div>
+    </form>
+</div>
+
+<script src="js/selector.js"></script>
+<script src="js/pomodoro.js"></script>
+<script>
+var p = new Pomodoro({
+  timeInMinutes: 1,
+  timeEl: $('#pomodoroTime'),
+  buttons: {
+    start: $('#pStart'),
+    pause: $('#pPause'),
+    stop: $('#pStop')
+  }
+});
+</script>
+
+</body>
+</html>

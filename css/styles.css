@@ -1,0 +1,64 @@
+body {
+    font-size: 100%;
+    background-color: #F3F3F3;
+}
+
+.flexcontainer {
+   display: -webkit-flex;
+   display: flex;
+   -webkit-flex-direction: row /* works with row or column */
+   flex-direction: row;
+   -webkit-align-items: center;
+   align-items: center;
+   -webkit-justify-content: center;
+   justify-content: center;
+}
+
+.pomodoro {
+  padding: 3em;
+  text-align: center;
+}
+
+.pomodoroTime {
+  font-size: 4em;
+  margin-bottom: 0.3em;
+}
+
+.pomodoro .btn {
+  padding: 0.5em 1.5em;
+  margin: 6px 8px 6px 8px;
+  min-width: 88px;
+  border-radius: 3px;
+  font-size: 14px;
+  text-align: center;
+  text-transform: uppercase;
+  text-decoration:none;
+  border: none;
+  outline: none;
+
+  font-size: 1em;
+
+  box-shadow: 0 2px 5px 0 rgba(0, 0, 0, 0.26);
+}
+
+.pomodoro .btn-primary {
+  background-color: rgba(63, 92, 255, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.pomodoro .btn-primary:hover {
+  box-shadow: inset 0px 0px 10px 0px rgb(76, 76, 76)
+}
+
+.pomodoro .btn-primary:disabled {
+  background-color: rgba(123, 136, 208, 1);
+}
+
+.pomodoro .btn-secondary {
+  background-color: rgba(173, 173, 173, 1);
+  color: rgba(255, 255, 255, 1);
+}
+
+.pomodoro .btn-secondary:hover {
+  box-shadow: inset 0px 0px 10px 0px rgb(76, 76, 76)
+}
